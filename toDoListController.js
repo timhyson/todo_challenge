@@ -14,6 +14,7 @@ toDoList.controller('ToDoListController', [function() {
         },
       ],
     };
+    console.log(self.taskInput);
   };
 
 }]);
