@@ -18,11 +18,39 @@
       <h1 class="text-center">To-Do List</h1>
       <h2 class="text-center">– an Angular app –</h2>
     </header>
+    <hr />
 
     <form class="form-horizontal">
-      <input type="text" ng-model="toDoCtrl.taskInput">
-      <button class="btn" ng-click="toDoCtrl.addTask()">Add task</button>
+      <div class="input-container">
+        <fieldset class="form-group">
+        <label for="task" class="col-sm-2 control-label">To Do:</label>
+        <span class="col-sm-9">
+          <input type="text" ng-model="toDoCtrl.taskInput" class="form-control"
+          id="task" placeholder="What needs to be done?">
+        </span>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label for="priority" class="control-label col-sm-2">Priority:</label>
+          <span class="col-sm-9">
+            <select class="form-control" id="priority" value="3">
+              <option>HIGH</option>
+              <option>MED</option>
+              <option>LOW</option>
+            </select>
+          </span>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <span class="col-sm-9 col-sm-offset-2 button-from-hell">
+            <button class="btn btn-primary" ng-click="toDoCtrl.addTask()">
+            Add Task</button>
+          </span>
+        </fieldset>
+      </div>
     </form>
+
+    <hr />
 
     <ul class="list-group">
       <li ng-repeat="task in toDoCtrl.tasks">
