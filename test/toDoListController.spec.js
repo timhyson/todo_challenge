@@ -14,12 +14,8 @@ describe('ToDoListController', function() {
   describe('when adding a task', function() {
 
     var tasks = [
-      {
-        'task': 'buy milk',
-      },
-      {
-        'task': 'wash car',
-      }
+      { task: 'buy milk', },
+      { task: 'wash car', }
     ];
 
     it('displays tasks', function() {

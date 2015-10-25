@@ -6,12 +6,8 @@ toDoList.controller('ToDoListController', [function() {
   self.addTask = function() {
     self.taskList = {
       tasks: [
-        {
-          'task': 'buy milk',
-        },
-        {
-          'task': 'wash car',
-        },
+        { task: 'buy milk', },
+        { task: 'wash car', },
       ],
     };
     console.log(self.taskInput);
