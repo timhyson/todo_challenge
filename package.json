@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/timhyson/todo_challenge#readme",
   "devDependencies": {
+    "bower": "^1.6.3",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.14",
     "karma-chrome-launcher": "^0.2.1",
