@@ -2,16 +2,20 @@ toDoList.controller('ToDoListController', [function() {
 
   var self = this;
 
-  self.taskList = {
-    'tasks': [
-      {
-        'task': 'buy milk',
-      },
-      {
-        'task': 'wash car',
-      },
-    ],
+
+  self.addTask = function() {
+    self.taskList = {
+      tasks: [
+        {
+          'task': 'buy milk',
+        },
+        {
+          'task': 'wash car',
+        },
+      ],
+    };
   };
+
 }]);
 
 // toDoList.controller("ToDoListController", [function(){

@@ -23,7 +23,10 @@ describe('ToDoListController', function() {
     ];
 
     it('displays tasks', function() {
+      ctrl.taskInput = 'call nan';
+      ctrl.addTask();
       expect(ctrl.taskList.tasks).toEqual(tasks);
     });
   });
+
 });
