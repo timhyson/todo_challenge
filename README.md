@@ -1,22 +1,6 @@
 # Todo Challenge
 
-* Deadline: submit completed pull request by 9am on Monday
-* You may use whatever level of JavaScript you feel comfortable with - pure JS, jQuery, Angular, or whatever weird and wonderful framework you want to try. Extra points for DogeScript
-
-Steps
--------
-
-1. Fill out your learning plan self review for the week: https://github.com/makersacademy/learning_plan
-2. Fork this repo, and clone to your local machine
-3. Complete the following challenge:
-
-## Challenge
-
-![Todo mockup](https://makersacademy.mybalsamiq.com/mockups/2914603.png?key=afabb09aef2901a2732515ae4349c1ec0458294b)
-
-Build a Todo list as a mini front-end application. You don't have to use a database, the front-end is more important - you can use an appropriate data structure stored somewhere in your JavaScript (this time only!)
-
-Here are the core user stories:
+This application was built to gain some experience of using AngularJS in a test driven environment.  It aims to address the following user stories:
 
 ```
 As a forgetful person
@@ -32,7 +16,7 @@ I want to mark my tasks as done
 So that I don't do them twice
 ```
 
-Here are some other user stories you may choose to implement:
+Future functionality might address the following user stories:
 
 ```
 As a person with a lot of tasks
@@ -48,26 +32,34 @@ I want to be able to clear my completed tasks
 So I never see them again
 ```
 
-As you may imagine, implementing a To-do list is very much a solved problem. However, we are mainly interested in seeing how you approach testing and design. We are looking for:
 
-* well written, well structured acceptance and unit tests
-* clear and expressive JavaScript
-* good HTML5 markup
+## Getting Started
 
-Don't worry about deployment, and make sure you read the CONTRIBUTING.md when submitting a pull request.
+To get you started you can simply clone the repository and install the dependencies:
 
-## Extensions
 
-* Deploy the app
-* Create a persistance layer (e.g. MongoDB), or use LocalStorage or the filesystem through Node
-* Make it look purdy (CSS) - try a framework like Bootstrap or Foundation
+### Prerequisites
 
-## CI
+You need git to clone the repository. You can get git from [http://git-scm.com/](http://git-scm.com/).
 
-Read the `.travis.yml` if any of the steps below don't make sense!
+I also use a number of node.js tools to initialize. You must have node.js and its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-* Make sure you have set up `npm test` in your `package.json` so that it runs your Karma tests
-* Make sure you have your Protractor config file at `e2e/conf.js`
-* Make sure `npm start` spins up whatever serves up your app - `http-server`, Sinatra or Node
 
-Good luck!
+### Clone ReadingList
+Clone the angular-seed repository using [git][git]:
+
+```
+git clone https://github.com/timhyson/todo_challenge.git
+cd todo_challenge
+```
+
+
+### Run the Application
+
+The project is preconfigured to run with a simple development web server.  The simplest way to start this server is:
+
+```
+npm start
+```
+
+Now browse to the app at `http://localhost:8000/app/index.html`.
