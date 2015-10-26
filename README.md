@@ -63,3 +63,8 @@ npm start
 ```
 
 Now browse to the app at `http://localhost:8000/app/index.html`.
+
+
+## Current project status
+
+Still in development.  I only want to add features when I can first write failing tests, and that's proving challenging but I intend to keep revisiting it.
